@@ -1,0 +1,145 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 40px 60px 120px 130px;
+    width: 100%;
+}
+
+.general {
+    margin-top: 100px;
+    width: 1200px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 0 0px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    height: 250px;
+}
+
+.banner_img {
+    margin-right: -20rem;
+    width: 100%;
+}
+
+.general h2 {
+    font-size: 15px;
+    color: #68131a;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.general p {
+    font-size: 14px;
+    color: #68131a;
+    margin: 0;
+    width: 200px;
+}
+
+.infoUbi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.itenUbi {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.itenUbi i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #681319;
+    font-size: 25px;
+    border-radius: 100%;
+    color: #ffffff;
+    margin: 0;
+    transition: 1s;
+}
+
+.itenUbi i:hover {
+    background-color: #C1272D;
+    color: #ffffff;
+    border: 2px solid #C1272D;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.social i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #681319;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 100%;
+    transition: 1s;
+}
+
+.social i:hover {
+    background-color: #C1272D;
+    color: #ffffff;
+    border: 2px solid #C1272D;
+}
+
+@media (max-width: 1022px) {
+    .general {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 150px;
+    }
+
+    .content_1 {
+        width: 600px
+    }
+}
+
+
+@media (max-width: 767px) {
+    .general {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+        margin-top: 150px;
+    }
+
+    .content_1 {
+        width: 100%;
+    }
+    .sounds{
+        width: 50%;
+    }
+}
+
+@media (max-width: 530px) {
+    .general{
+        margin-top: 0;
+        padding-top: 130px;
+    }
+}

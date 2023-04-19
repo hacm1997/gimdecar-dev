@@ -1,0 +1,10 @@
+.ratings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ratings div p{
+    font-size: 18px;
+    color: #681319;
+}

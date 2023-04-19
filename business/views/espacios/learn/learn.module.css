@@ -1,0 +1,15 @@
+.title{
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.title h1{
+    font-size: 60px;
+
+    color: #000000;
+    line-height: 60px;
+}
+.title h1 span{
+    color: #000000;
+    font-weight: 900;
+}
