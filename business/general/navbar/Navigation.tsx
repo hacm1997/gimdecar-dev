@@ -3,27 +3,12 @@ import styles from "./Navigation.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import useTranslation from "next-translate/useTranslation";
 
-const menuItems = [
-  {
-    text: "Home",
-    href: "/",
-  },
-  {
-    text: "Idiomas",
-    href: "/idiomas",
-  },
-  {
-    text: "Talento",
-    href: "/talento",
-  },
-  {
-    text: "Espacios",
-    href: "/espacios",
-  },
-];
 
 const Navigation = () => {
+  const {t, lang} = useTranslation('nav');
+  const menuItems = t<any>("menuItems", {}, {returnObjects: true});
   const [icon, setIcon] = useState("bx bx-menu-alt-right");
   const [menu, setMenu] = useState<any>(styles.menu);
   const router = useRouter();
@@ -67,28 +52,28 @@ const Navigation = () => {
               </div>
             </div>
 
-            {menuItems.map(({ text, href }) => (
-              <div className={styles.listButtons} key={href}>
-                <Link href={href}>
+            {menuItems.filter((item:any) => item.active === true).map((item:any, index:number) => (
+              <div className={styles.listButtons} key={index}>
+                <Link href={item.href}>
                   {router.asPath === "/idiomas" ? (
                     <div
                       className={
-                        router.asPath === href
+                        router.asPath === item.href
                           ? styles.active
                           : styles.button_menu_idiomas
                       }
                     >
-                      {text}
+                      {item.text}
                     </div>
                   ) : (
                     <div
                       className={
-                        router.asPath === href
+                        router.asPath === item.href
                           ? styles.active
                           : styles.button_menu
                       }
                     >
-                      {text}
+                      {item.text}
                     </div>
                   )}
                 </Link>
@@ -102,11 +87,17 @@ const Navigation = () => {
                   : styles.social_network
               }
             >
-              <ul>
-                <i className="bx bxl-instagram"></i>
-                <i className="bx bxl-facebook"></i>
-                <i className="bx bxl-tiktok"></i>
+              <ul className={styles.icons}>
+                <a href="https://www.instagram.com/gimdecar/" target="_blank" title="Social Media"><i className="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/Gimdecar" target="_blank" title="Social Media"><i className="bx bxl-facebook"></i></a>
+                <a href="/" title="Español">
+                  <img src="/images/icons/spanish_icon.png" alt="Español" width={25} height={25} title="Español"/>
+                </a>
+                <a href="/en" title="English">
+                  <img src="/images/icons/english_icon.png" alt="English" width={25} height={25} title="English"/>
+                </a>
               </ul>
+
             </div>
           </ul>
         </div>

@@ -1,5 +1,5 @@
 .container{
-    margin-top: -100px;
+    margin-top: -85px;
     background-image: linear-gradient(180deg, rgba(254,250,244,0) 68%, rgba(33,31,22,1) 100%), url("/images/talento/background-talent.png");
     background-size: 100% 100%;
     display: flex;
@@ -21,7 +21,7 @@
 }
 
 .title h2{
-    line-height: 52px;
+    line-height: 56px;
     padding-left: 50px;
     color: #FFFFFF;
     width: 300px;
@@ -91,7 +91,6 @@
     .title{
         margin-left: 165px;
     }
-
 }
 @media (max-width: 1620px) {
     .title{
@@ -137,8 +136,8 @@
         width: 80%;
     }
     .title h2{
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 30px;
+        line-height: 30px;
     }
     .title p{
         font-size: 12px;

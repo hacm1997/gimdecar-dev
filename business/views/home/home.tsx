@@ -72,7 +72,7 @@ const HomePage = () => {
       <br />
       <StarsRatings />
       <HelpComponent/>
-      <Form setSelectDpto={setSelectDpto} dpto={dpto} city={city} />
+      <Form setSelectDpto={setSelectDpto} dpto={dpto} city={city} translate={t} lang={lang}/>
       <div className={styles.background_content2}>
         {/*<Image*/}
         {/*  style={{ width: '100% !important' }}*/}

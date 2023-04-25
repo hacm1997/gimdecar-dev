@@ -1,4 +1,6 @@
 .container{
+    display: flex;
+    justify-content: center;
     margin-top: -14px;
     background-image: url("/images/idiomas/activities/background-white.png");
     background-size: 100% 100%;
@@ -16,8 +18,8 @@
     padding-top: 100px;
     display: flex;
     justify-content: flex-end;
-    width: 480px;
-    margin-left:132px;
+    width: 430px;
+    margin-left:175px;
 }
 .title h2{
     font-size: 60px;
@@ -91,7 +93,7 @@
         width: 320px;
         height: 320px;
     }
-    
+
 }
 
 @media (max-width: 535px) {

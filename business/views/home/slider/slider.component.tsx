@@ -82,14 +82,7 @@ export default function SliderComments(props: any) {
           ) : null}
           {props.id === "talento" ? (
             <div className={styles.title_home}>
-              <h2
-                style={{
-                  color: "#211F16",
-                  fontWeight: "900",
-                  marginTop: "-40px",
-                  lineHeight: "60px",
-                }}
-              >
+              <h2>
                 {props.title} <br />
                 {props.titlebr}
               </h2>

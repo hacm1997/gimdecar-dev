@@ -44,28 +44,23 @@
     "talento":[
         {
             "image": "/images/comments/user-default.png",
-            "name":"Daniela Nuñez"  ,
-            "comment": "Una institución educativa que forma estudiantes humanística y académicamente, en un ambiente de sana convivencia y apoyados en valores, promoviendo así el desarrollo de capacidades intelectuales, comunicativas, artísticas, tecnológicas y deportivas, de conformidad con los lineamientos curriculares y los signos de los tiempos."
-        },
-        {
-            "image": "/images/comments/user-default.png",
-            "name":"Ana Bossa",
-            "comment": "Estoy muy agradecida con Gimdecar. Son una institución muy comprometida con la educación de los estudiantes y siempre con el amor"
-        },
-        {
-            "image": "/images/comments/user-default.png",
-            "name":"Carmen Díaz",
-            "comment": "Genial!! Nuestras niñas y niños se ven bellos , súper felices, esas caritas hermosas es el reflejo de lo que sienten en su corazón. Gracias Gimdecar por estás actividades que hacen que nuestros hijos fortalezcan sus lazos de amistad y se diviertan mucho aprendiendo. 🤩🥳😍😍💕"
-        },
-        {
-            "image": "/images/comments/user-default.png",
-            "name":"Andrés Escobar",
-            "comment": "Excelente Institución, buena calidad y buen trato."
+            "name":"Nubia González"  ,
+            "comment": "An educational institution that trains students humanistically and academically, in an environment of healthy coexistence and supported by values, thus promoting the development of intellectual, communicative, artistic, technological and sports capacities, in accordance with curricular guidelines and signs of time"
         },
         {
             "image": "/images/comments/user-default.png",
             "name":"Daniela Nuñez",
-            "comment": "Estoy muy agradecida con Gimdecar. Son una institución muy comprometida con la educación de los estudiantes y siempre con amor."
+            "comment": "I am very grateful to Gimdecar. They are an institution very committed to the education of students and always with love"
+        },
+        {
+            "image": "/images/comments/user-default.png",
+            "name":"Carmen Díaz",
+            "comment": "Great!! Our girls and boys look beautiful , super happy, those beautiful faces is the reflection of what they feel in their heart. Thanks Gimdecar for these activities that make our children strengthen their bonds of friendship and have fun learning. 🤩🥳😍😍💕"
+        },
+        {
+            "image": "/images/comments/user-default.png",
+            "name":"Andrés Escobar",
+            "comment": "Excellent institution, good quality and good treatment."
         }
     ]
 }

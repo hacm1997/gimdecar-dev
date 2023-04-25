@@ -206,24 +206,23 @@
 
 
 @media (max-width: 767px) {
-    .general {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        margin-top: 150px;
-    }
-    .general2 {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 50px;
-        margin-top: 150px;
-    }
 
     .content_1 {
         width: 100%;
     }
     .sounds{
         width: 50%;
+    }
+    .general{
+        margin-top: 0;
+        padding-top: 130px;
+    }
+    .general2{
+        margin-top: 0;
+        padding-top: 130px;
+    }
+    .footer{
+        padding: 20px;
     }
 }
 

@@ -79,7 +79,7 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 920px) {
+@media (max-width: 940px) {
     .image img{
         width: 250px !important;
         height: 380px !important;
@@ -104,8 +104,11 @@
         margin-left: -5px;
 
     }
+    .content {
+        width: 100%;
+    }
 }
-@media (max-width: 730px) {
+@media (max-width: 710px) {
     .text h2{
         padding-left: 20px;
         line-height: 40px;

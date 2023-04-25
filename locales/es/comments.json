@@ -39,12 +39,12 @@
     "talento":[
         {
             "image": "/images/comments/user-default.png",
-            "name":"Daniela Nuñez"  ,
+            "name":"Nubia González"  ,
             "comment": "Una institución educativa que forma estudiantes humanística y académicamente, en un ambiente de sana convivencia y apoyados en valores, promoviendo así el desarrollo de capacidades intelectuales, comunicativas, artísticas, tecnológicas y deportivas, de conformidad con los lineamientos curriculares y los signos de los tiempos."
         },
         {
             "image": "/images/comments/user-default.png",
-            "name":"Ana Bossa",
+            "name":"Daniela Nuñez",
             "comment": "Estoy muy agradecida con Gimdecar. Son una institución muy comprometida con la educación de los estudiantes y siempre con el amor"
         },
         {
@@ -56,11 +56,6 @@
             "image": "/images/comments/user-default.png",
             "name":"Andrés Escobar",
             "comment": "Excelente Institución, buena calidad y buen trato."
-        },
-        {
-            "image": "/images/comments/user-default.png",
-            "name":"Daniela Nuñez",
-            "comment": "Estoy muy agradecida con Gimdecar. Son una institución muy comprometida con la educación de los estudiantes y siempre con amor."
         }
     ]
 }

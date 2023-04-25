@@ -10,7 +10,7 @@ export default function GradesComponent(props: any) {
                     <div>
                         <div className={styles.title}>
                             <h2>{props.translate('talents.section1.title')}</h2>
-                            <p>{props.translate('talents.section1.description')}</p>
+                            <p>{props.translate('talents.section1.description')}</p> 
 
                             {/* <div className={styles.search_grade}>
                                 <div className={styles.search_content}>

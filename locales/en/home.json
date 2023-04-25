@@ -28,5 +28,14 @@
     "section5": {
         "title": "Does your child have musical skills?",
         "description": "In Gimdecar we have a music room for your children to develop their talent"
+    },
+    "form": {
+        "dpto": "Department",
+        "city": "City",
+        "address": "Address",
+        "name": "Name",
+        "phone": "Phone/Cell",
+        "email": "E-mail",
+        "button": "Quote"
     }
 }

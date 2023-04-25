@@ -3,13 +3,13 @@
         "button": "Leer más"
     },
     "section1": {
-        "title": "Enseñanza en amor para tus hijos desde los primeros años",
-        "button": "Matricula a tu hijo"
+        "title": "Teaching in love for your children from the first years",
+        "button": "Sign up your child"
     },
     "talents": {
         "section1":{
-            "title": "Educación en amor",
-            "description": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
+            "title": "Education with love",
+            "description": "Our teachers have vocation and commitment to the first generations",
             "placeholder": "Buscar grado",
             "grades": {
                 "list": ["1ER GRADO", "2DO GRADO", "3ER GRADO", "4TO GRADO", "5TO GRADO", "6TO GRADO"],
@@ -61,36 +61,45 @@
             },
             "gallery": [
                 {
-                    "img": "/images/books.png",
+                    "img": "/images/talento/slider/IMG_1.jpg",
                     "alt": "Books",
                     "title": "Books"
                 },
                 {
-                    "img": "/images/books.png",
+                    "img": "/images/talento/slider/IMG_2.jpg",
                     "alt": "Books",
                     "title": "Books"
                 },
                 {
-                    "img": "/images/books.png",
+                    "img": "/images/talento/slider/IMG_3.jpg",
+                    "alt": "Books",
+                    "title": "Books"
+                },
+                {
+                    "img": "/images/talento/slider/IMG_4.jpg",
+                    "alt": "Books",
+                    "title": "Books"
+                },
+                {
+                    "img": "/images/talento/slider/IMG_5.jpg",
                     "alt": "Books",
                     "title": "Books"
                 }
             ]
         },
         "section2":{
-            "title": "Conoce nuestra sede de preescolar",
-            "description": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
-            "placeholder": "Buscar tu talento"
+            "title": "Get to know our preschool headquarters",
+            "description": "Our educational community is willing and passionate about being positive tools for you and your family.",
+            "button": "play video"
         }
     },
     "spaces": {
-        "title1": "Conoce los espacios para desarrollar",
-        "title2": "tu talento",
+        "title1": "Get to know our preschool headquarters",
         "description": "Lorem ipsum dolor sit amet consectetuer adipiscing elit",
-        "placeholder": "Buscar un espacio"
+        "button": "play video"
     },
     "comments": {
-        "title": "Nuestros papitos",
-        "title2": "comentan"
+        "title": "Our parents",
+        "title2": "comment"
     }
 }

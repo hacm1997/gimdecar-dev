@@ -58,6 +58,7 @@
 @media (max-width: 950px) {
     .beats{
         left: 30px;
+        margin-top: -10px;
     }
 }
 @media (max-width: 850px) {
@@ -69,7 +70,8 @@
         text-align: center;
     }
     .beats{
-        margin-top: -20px;
+        width: 260px;
+        margin-top: -26px;
         left: 0px;
     }
     .content{
@@ -80,5 +82,15 @@
     .beats img{
         width: 300px;
         height: 320px;
+    }
+}
+
+@media (max-width: 450px) {
+    .text h4{
+        font-size: 27px;
+    }
+    .text p{
+        padding-top: 8px;
+        font-size: 13px;
     }
 }

@@ -28,5 +28,14 @@
     "section5": {
         "title": "¿Tu hijo tiene habilidades musicales?",
         "description": "En Gimdecar tenemos salón de música para que tus niños desarrollen su talento"
+    },
+    "form": {
+        "dpto": "Departamento",
+        "city": "Ciudad",
+        "address": "Dirección",
+        "name": "Nombre",
+        "phone": "Tel/Cel",
+        "email": "Correo electrónico",
+        "button": "Cotizar"
     }
 }

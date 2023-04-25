@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   const { t, lang } = useTranslation("languages");
   const items_slider = t<any>("section3", {}, { returnObjects: true });
 
-  console.log("languages slider => ", items_slider);
+  // console.log("languages slider => ", items_slider);
   return (
     <>
       <Layout>
