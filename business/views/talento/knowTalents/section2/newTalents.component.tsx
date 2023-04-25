@@ -1,13 +1,19 @@
+import TabComponent from '../../tabNavigarion/tab.component';
 import styles from './newTalents.module.css';
 import Image from "next/image";
+import SliderTalent from './slider/sliderTalent.component';
 
 export default function NewTalentsComponent(props:any){
-
+    
     return(
         <>
             <div className={styles.container}>
-                <div className={styles.grid}>
-                    <div className={styles.image}>
+                <div className={styles.content}>
+                    <div>
+                        {/* <TabComponent translate={props.translate}/> */}
+                        <SliderTalent translate={props.translate}/>
+                    </div>
+                    {/* <div className={styles.image}>
                         <Image
                             className={styles.light}
                             src={'/images/talento/lampara.png'}
@@ -24,7 +30,7 @@ export default function NewTalentsComponent(props:any){
                             <div className={styles.search_grade}>
                                 <input type='text' placeholder={props.translate('talents.section2.placeholder')} />
                                 <button type='button'>
-                                    <img
+                                    <Image
                                         src='/images/talento/arrow-right.png'
                                         alt='search' title='arrow'
                                         width={28}
@@ -33,7 +39,7 @@ export default function NewTalentsComponent(props:any){
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

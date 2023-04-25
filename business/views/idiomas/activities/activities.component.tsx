@@ -1,7 +1,8 @@
+import Link from "next/link";
 import styles from "./activities.module.css"
 import Image from "next/image";
 
-export default function ActivitiesComponent(){
+export default function ActivitiesComponent({translate}:any){
 
     return(
         <>
@@ -11,18 +12,16 @@ export default function ActivitiesComponent(){
                         <div>
                             <div>
                                 <h2>
-                                    Actividades<br/>
-                                    <span>English Class</span>
+                                {translate("section2.title")}
                                 </h2>
                             </div>
                             <div className={styles.description}>
                                 <p>
-                                    Lorem ipsum dolor sit amet
-                                    consectetuer adipiscing elit
+                                    {translate("section2.description")}
                                 </p>
                             </div>
                             <div className={styles.button}>
-                                <button>Leer Más</button>
+                                <Link href="/#form-seccion">{translate("section2.button")}</Link> 
                             </div>
                         </div>
                     </div>

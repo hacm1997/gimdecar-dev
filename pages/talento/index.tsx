@@ -13,6 +13,7 @@ import ReadyLearnComponenet from "../../business/content/readyLearn/readyLearn.c
 
 const Home: NextPage = () => {
   const { t, lang } = useTranslation('talent');
+  
   return (
     <>
       <Layout>
@@ -22,12 +23,12 @@ const Home: NextPage = () => {
         <SpacesComponent translate={t} />
         <SliderComments title={t('comments.title')} titlebr={t('comments.title2')} id={"talento"} />
         <div style={{ paddingTop: '10px' }}>
-          <StarsRatings />
+          <StarsRatings/>
         </div>
-        <HelpComponent />
+        <HelpComponent/>
         <div className={styles.learn}>
           <div className={styles.top}>
-            <ReadyLearnComponenet />
+            <ReadyLearnComponenet/>
           </div>
         </div>
       </Layout>

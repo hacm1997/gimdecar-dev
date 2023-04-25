@@ -12,11 +12,11 @@ export default function GradesComponent(props: any) {
                             <h2>{props.translate('talents.section1.title')}</h2>
                             <p>{props.translate('talents.section1.description')}</p>
 
-                            <div className={styles.search_grade}>
+                            {/* <div className={styles.search_grade}>
                                 <div className={styles.search_content}>
                                     <input type='text' placeholder={props.translate('talents.section1.placeholder')} />
                                     <button type='button'>
-                                        <img
+                                        <Image
                                             src='/images/talento/arrow-right.png'
                                             alt='search' title='arrow'
                                             width={28}
@@ -24,12 +24,13 @@ export default function GradesComponent(props: any) {
                                         />
                                     </button>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div>
                         <div className={styles.image}>
                             <img
+                            
                                 src={'/images/talento/mazorca.png'}
                                 alt='Mazorca'
                                 title='Mazorca bonita'

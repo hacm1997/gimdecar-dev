@@ -9,7 +9,10 @@ export default function Footer() {
   const router = useRouter();
 
   const backColor = {
-    backgroundColor: router.asPath === "/" ? "#f2ebe1" : "#FFFFFF"
+    backgroundColor: router.asPath === "/" ? "#f2ebe1" : "#211F16"
+  }
+  const backColorTalent = {
+    backgroundColor: "#FFFFFF"
   }
   return (
     <>
@@ -31,52 +34,58 @@ export default function Footer() {
             height={400}
           />
       </div> */}
-      <footer className={styles.footer} style={backColor}>
-        <div className={styles.general}>
+      <footer className={styles.footer} style={router.asPath === "/talento" || router.asPath === "/idiomas" ? backColorTalent : backColor}>
+        <div className={router.asPath === '/espacios' ? styles.general2 : styles.general}>
           <div className={styles.content_1}>
-            <div className={styles.logo}>
-              {/* <img src="/images/planet.png" alt="Medtrip" title="Medtrip"/> */}
+            <div className={styles.content_logo}>
+              <div className={styles.image_logo}>
+                <Image
+                  src={"/images/logo_footer_color.png"}
+                  alt={"logo Gimdecar"}
+                  width={60}
+                  height={60}
+                  title="logo Gimdecar"
+                />
+              </div>
+              <div className={styles.gym}>
+                <h2>
+                  GIMNASIO MODERNO DE CARTAGENA
+                </h2>
+                <h2>{t('about.title')}</h2>
+                <p>
+                  {t('about.description')}
+                </p>
+              </div>
+
             </div>
-            <h2>
-              <Image
-                src={"/images/gimdecar-logo.png"}
-                alt={"logo Gimdecar"}
-                width={20}
-                height={20}
-              />
-              GIMNASIO MODERNO DE CARTAGENA
-            </h2>
-            <h2>{t('about.title')}</h2>
-            <p>
-              {t('about.description')}
-            </p>
+
           </div>
 
           <div className={styles.content_2}>
             <h2>{t("contact.title")}</h2>
             <div className={styles.infoUbi}>
 
-              <div className={styles.itenUbi}>
+              <div className={router.asPath === '/espacios' ? styles.itenUbi2 : styles.itenUbi}>
                 <i className="bx bx-mail-send"></i>
                 <div className={styles.info}>
                   <p>
-                    {t("contact.address")} <br/>
+                    {t("contact.address")} <br />
                     {t('contact.place')}
                   </p>
                 </div>
               </div>
 
-              <div className={styles.itenUbi}>
+              <div className={router.asPath === '/espacios' ? styles.itenUbi2 : styles.itenUbi}>
                 <i className="bx bx-phone"></i>
                 <div className={styles.info}>
                   <p>
-                    {t("contact.phone1")}<br/>
+                    {t("contact.phone1")}<br />
                     {t("contact.phone2")}
-                    </p>
+                  </p>
                 </div>
               </div>
 
-              <div className={styles.itenUbi}>
+              <div className={router.asPath === '/espacios' ? styles.itenUbi2 : styles.itenUbi}>
                 <i className="bx bx-time-five"></i>
                 <div className={styles.info}>
                   <p>{t("contact.schedule.name")}</p>
@@ -87,12 +96,11 @@ export default function Footer() {
           </div>
 
           <div className={styles.content_3}>
-            <h2>Redes Sociales</h2>
-            <div className={styles.social}>
+            <h2>{t('social.title')}</h2>
+            <div className={router.asPath === '/espacios' ? styles.social2 : styles.social}>
               <ul className={styles.navigation}>
-                <i className="bx bxl-instagram"></i>
-                <i className="bx bxl-facebook"></i>
-                <i className="bx bxl-tiktok"></i>
+                <a href="https://www.instagram.com/gimdecar/" target="_blank" title="Social Media"><i className="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/Gimdecar" target="_blank" title="Social Media"><i className="bx bxl-facebook"></i></a>
               </ul>
             </div>
             <h2>{t("legacy.title")}</h2>

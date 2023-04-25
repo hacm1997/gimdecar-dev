@@ -17,12 +17,12 @@
 
 .text{
     position: relative;
-    top: 2%;
+    top: 4%;
     left: 20%;
 }
 .text h4{
     width: 100%;
-    font-size: 37px;
+    font-size: 35px;
     font-weight: 500;
     color: #f1ebe0;
 }

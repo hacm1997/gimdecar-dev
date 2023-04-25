@@ -4,7 +4,7 @@
 }
 
 .button_menu {
-    padding: 13px 24px;
+    padding: 16px 40px;
     color: white !important;
     font-weight: 600;
     background-color: #681319 !important;
@@ -15,7 +15,7 @@
 }
 
 .button_menu_idiomas{
-    padding: 13px 24px;
+    padding: 16px 40px;
     color: #681319 !important;
     font-weight: 600;
     background-color: #FFFFFF !important;
@@ -55,7 +55,7 @@
 
 .menu ul {
     display: flex;
-    gap:15px;
+    gap: 20px;
 }
 .botonMovil {
     display: none;
@@ -111,7 +111,7 @@
 .active {
     background-color: #C1272D;
     color: #FFFFFF;
-    padding: 13px 24px;
+    padding: 16px 40px;
     font-weight: 600;
     border-radius: 6px;
     font-size: 15px;

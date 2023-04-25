@@ -11,6 +11,10 @@
     margin-top: -5px;
 }
 
+.content{
+    margin-top: -250px;
+}
+
 .grid{
     margin-top: -150px;
     display: grid;

@@ -21,7 +21,7 @@
 }
 
 .title h2{
-    line-height: 60px;
+    line-height: 52px;
     padding-left: 50px;
     color: #FFFFFF;
     width: 300px;
@@ -138,9 +138,10 @@
     }
     .title h2{
         font-size: 40px;
+        line-height: 44px;
     }
     .title p{
-        font-size: 14px;
+        font-size: 12px;
     }
     .search_grade{
         padding-left: 40px;

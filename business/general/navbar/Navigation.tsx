@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./Navigation.module.css";
 import Image from "next/image";
 import { useState } from "react";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 
 const menuItems = [
   {
@@ -20,10 +20,6 @@ const menuItems = [
   {
     text: "Espacios",
     href: "/espacios",
-  },
-  {
-    text: "Home5",
-    href: "/home5",
   },
 ];
 
@@ -47,11 +43,17 @@ const Navigation = () => {
       <div className={styles.general}>
         <div className={styles.logo}>
           <Link href="/">
-                <img
-                    src={`/images/${router.asPath === '/idiomas' ? 'gimdecar-logo-blanco.png' : 'gimdecar-logo.png'}`}
-                    alt={"logo Gimdecar"}
-
-                />
+            <Image
+              width={50}
+              height={50}
+              src={`/images/${
+                router.asPath === "/idiomas"
+                  ? "gimdecar-logo-blanco.png"
+                  : "gimdecar-logo.png"
+              }`}
+              alt={"logo Gimdecar"}
+              title="logo_gimdecar"
+            />
           </Link>
         </div>
 
@@ -63,36 +65,50 @@ const Navigation = () => {
                   <i className={icon}></i>
                 </Link>
               </div>
-
             </div>
 
-              {menuItems.map(({ text, href }) => (
-                  <div className={styles.listButtons} key={href}>
-                  <Link href={href} >
-                    {router.asPath === '/idiomas'?
-                        <div className={router.asPath === href ? styles.active : styles.button_menu_idiomas} >
-                          {text}
-                        </div>
-                        :
-                        <div className={router.asPath === href ? styles.active : styles.button_menu} >
-                          {text}
-                        </div>
-                    }
-                  </Link>
-                  </div>
-              ))}
+            {menuItems.map(({ text, href }) => (
+              <div className={styles.listButtons} key={href}>
+                <Link href={href}>
+                  {router.asPath === "/idiomas" ? (
+                    <div
+                      className={
+                        router.asPath === href
+                          ? styles.active
+                          : styles.button_menu_idiomas
+                      }
+                    >
+                      {text}
+                    </div>
+                  ) : (
+                    <div
+                      className={
+                        router.asPath === href
+                          ? styles.active
+                          : styles.button_menu
+                      }
+                    >
+                      {text}
+                    </div>
+                  )}
+                </Link>
+              </div>
+            ))}
 
-
-            <div className={router.asPath === '/idiomas' ? styles.social_network_idiomas : styles.social_network}>
+            <div
+              className={
+                router.asPath === "/idiomas"
+                  ? styles.social_network_idiomas
+                  : styles.social_network
+              }
+            >
               <ul>
                 <i className="bx bxl-instagram"></i>
                 <i className="bx bxl-facebook"></i>
                 <i className="bx bxl-tiktok"></i>
               </ul>
             </div>
-
           </ul>
-
         </div>
         <div>
           <div onClick={handleMenu} className={styles.botonMovil}>
@@ -101,7 +117,6 @@ const Navigation = () => {
             </Link>
           </div>
         </div>
-
       </div>
     </nav>
   );

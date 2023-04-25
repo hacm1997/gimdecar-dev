@@ -1,19 +1,18 @@
 import styles from "./banner.module.css";
 import Image from "next/image";
 
-export default function BannerComponent(){
+export default function BannerComponent({translate}:any){
 
     return(
         <>
             <div className={styles.container}>
                 <div className={styles.grid}>
                     <div className={styles.titleButton}>
-                        <h1>Una Escuela <br/>
-                            Bilingue<br/>
-                            cerca de ti
+                        <h1>
+                            {translate("section1.title")}
                         </h1>
                         <div className={styles.button}>
-                            <button>Leer Más</button>
+                            <button>{translate("section1.button")}</button>
                         </div>
 
                     </div>

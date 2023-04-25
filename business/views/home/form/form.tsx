@@ -1,8 +1,9 @@
 import { useForm } from "../../../content/hooks/useForm";
 import styles from "./form.module.css";
 import FormService from "../../../../services/form.service";
+import { useEffect } from "react";
 
-const Form = () => {
+const Form = (props: any) => {
   const {
     city,
     address,
@@ -10,6 +11,7 @@ const Form = () => {
     product,
     cel,
     email,
+    dpto,
     formState,
     onInputChange,
     onResetForm,
@@ -28,27 +30,41 @@ const Form = () => {
     address: address,
     city: city,
     product: product,
-    cel: cel
+    cel: cel,
+    dpto: dpto
   }
 
-  const saveForm = (ev:any) => {
+  const saveForm = (ev: any) => {
     ev.preventDefault();
     FormService(dataForm)
   }
 
+  const dptoSelect = props.dpto.map((item: any, index: any) => (
+    <option key={index} value={item}>{item}</option>
+  ));
+  const citySelect = props.city.map((item: any, index: any) => (
+    <option key={index} value={item}>{item}</option>
+  ));
+
+  useEffect(() => {
+    props.setSelectDpto(dataForm.dpto);
+  }, [dataForm.dpto]);
+
   return (
-    <form className={styles.form}>
+    <form id="form-seccion" className={styles.form}>
       <div className={styles.form_container}>
         <div className={styles.content_form}>
           <div className={styles.inputs}>
-            <input
-              required
-              type="text"
-              placeholder="Ciudad"
-              value={city}
-              onChange={onInputChange}
-              name="city"
-            />
+            <select name="dpto" onChange={onInputChange} required>
+              <option value="">Departamento</option>
+              {dptoSelect}
+            </select>
+          </div>
+          <div className={styles.inputs}>
+            <select name="city" onChange={onInputChange} required>
+              <option value="">Ciudad</option>
+              {citySelect}
+            </select>
           </div>
 
           <div className={styles.inputs}>
