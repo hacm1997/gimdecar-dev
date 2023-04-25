@@ -40,7 +40,7 @@ export default function Footer() {
             <div className={styles.content_logo}>
               <div className={styles.image_logo}>
                 <Image
-                  src={"/images/logo_footer_color.png"}
+                  src={router.asPath === '/espacios' ? "/images/logo_white.png" : "/images/logo_footer_color.png"}
                   alt={"logo Gimdecar"}
                   width={60}
                   height={60}
