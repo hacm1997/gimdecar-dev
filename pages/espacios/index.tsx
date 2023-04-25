@@ -1,10 +1,8 @@
 import { NextPage } from "next";
-
 import Layout from "../../business/general/layout/layout.component";
 import styles from "./index.module.css";
 import ReadyLearnComponenet from "../../business/content/readyLearn/readyLearn.component";
 import StarsRatings from "../../business/content/ratings/ratinsStars.component";
-import { Swiper } from "swiper/react";
 import SliderComments from "../../business/views/home/slider/slider.component";
 import Learn from "../../business/views/espacios/learn/learn.component";
 import Image from "next/image";
@@ -45,9 +43,9 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className={styles.upfooter}>
-          <StarsRatings translate={t}/>
-          <HelpComponent translate={t}/>
-          <ReadyLearnComponenet translate={t}/>
+          <StarsRatings/>
+          <HelpComponent/>
+          <ReadyLearnComponenet/>
         </div>
       </Layout>
     </>
